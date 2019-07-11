@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6AA39F467E0BF2D262468F /* Pods_TymateSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6685F60706721708C67C8CF6 /* Pods_TymateSwiftExtensions.framework */; };
 		F464DAE522D39F2C002413BD /* TymateSwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00955484756FD6B2C4E60979 /* Pods-TymateSwiftExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TymateSwiftExtensions.debug.xcconfig"; path = "Target Support Files/Pods-TymateSwiftExtensions/Pods-TymateSwiftExtensions.debug.xcconfig"; sourceTree = "<group>"; };
+		6685F60706721708C67C8CF6 /* Pods_TymateSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TymateSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A9AA7B809D409F49089628 /* Pods-TymateSwiftExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TymateSwiftExtensions.release.xcconfig"; path = "Target Support Files/Pods-TymateSwiftExtensions/Pods-TymateSwiftExtensions.release.xcconfig"; sourceTree = "<group>"; };
 		F464DAE022D39F2C002413BD /* TymateSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TymateSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TymateSwiftExtensions.h; sourceTree = "<group>"; };
 		F464DAE422D39F2C002413BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,17 +25,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6AA39F467E0BF2D262468F /* Pods_TymateSwiftExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D8C62BF21F4152D039CF6AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00955484756FD6B2C4E60979 /* Pods-TymateSwiftExtensions.debug.xcconfig */,
+				78A9AA7B809D409F49089628 /* Pods-TymateSwiftExtensions.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C58F91773359195F58743A05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6685F60706721708C67C8CF6 /* Pods_TymateSwiftExtensions.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F464DAD622D39F2C002413BD = {
 			isa = PBXGroup;
 			children = (
 				F464DAE222D39F2C002413BD /* TymateSwiftExtensions */,
 				F464DAE122D39F2C002413BD /* Products */,
+				0D8C62BF21F4152D039CF6AF /* Pods */,
+				C58F91773359195F58743A05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F464DAE822D39F2C002413BD /* Build configuration list for PBXNativeTarget "TymateSwiftExtensions" */;
 			buildPhases = (
+				842724E14494B6D63B9EBB98 /* [CP] Check Pods Manifest.lock */,
 				F464DADB22D39F2C002413BD /* Headers */,
 				F464DADC22D39F2C002413BD /* Sources */,
 				F464DADD22D39F2C002413BD /* Frameworks */,
@@ -124,6 +150,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		842724E14494B6D63B9EBB98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TymateSwiftExtensions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F464DADC22D39F2C002413BD /* Sources */ = {
@@ -260,6 +311,7 @@
 		};
 		F464DAE922D39F2C002413BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00955484756FD6B2C4E60979 /* Pods-TymateSwiftExtensions.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -284,6 +336,7 @@
 		};
 		F464DAEA22D39F2C002413BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A9AA7B809D409F49089628 /* Pods-TymateSwiftExtensions.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
