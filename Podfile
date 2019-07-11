@@ -6,6 +6,7 @@ target 'TymateSwiftExtensions' do
   use_frameworks!
 
   # Pods for TymateSwiftExtensions
-  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'Toast-Swift'
 
 end

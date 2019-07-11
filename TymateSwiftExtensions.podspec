@@ -12,8 +12,8 @@ This CocoaPods library helps you perform calculation.
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Simon Lejeune" => "simon@tymate.com" }
 
-  spec.ios.deployment_target = "12.1"
-  spec.swift_version = "4.2"
+  spec.ios.deployment_target = "12.0"
+  spec.swift_version = "4.0"
 
   spec.source        = { :git => "https://github.com/tymate/tymate-swift-extensions.git", :tag => "#{spec.version}" }
   spec.source_files  = "TymateSwiftExtensions/**/*.{h,m,swift}"

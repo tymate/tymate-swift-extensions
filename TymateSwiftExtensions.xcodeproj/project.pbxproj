@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5B6AA39F467E0BF2D262468F /* Pods_TymateSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6685F60706721708C67C8CF6 /* Pods_TymateSwiftExtensions.framework */; };
+		F403403022D76E4500784A3C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403402F22D76E4500784A3C /* UIViewController.swift */; };
 		F464DAE522D39F2C002413BD /* TymateSwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F464DB1322D730A5002413BD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464DB1222D730A5002413BD /* StringExtensions.swift */; };
+		F464DB3322D76917002413BD /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464DB3222D76917002413BD /* DateFormatterExtensions.swift */; };
+		F464DB3522D769E3002413BD /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464DB3422D769E3002413BD /* UIImageViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00955484756FD6B2C4E60979 /* Pods-TymateSwiftExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TymateSwiftExtensions.debug.xcconfig"; path = "Target Support Files/Pods-TymateSwiftExtensions/Pods-TymateSwiftExtensions.debug.xcconfig"; sourceTree = "<group>"; };
 		6685F60706721708C67C8CF6 /* Pods_TymateSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TymateSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A9AA7B809D409F49089628 /* Pods-TymateSwiftExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TymateSwiftExtensions.release.xcconfig"; path = "Target Support Files/Pods-TymateSwiftExtensions/Pods-TymateSwiftExtensions.release.xcconfig"; sourceTree = "<group>"; };
+		F403402F22D76E4500784A3C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F464DAE022D39F2C002413BD /* TymateSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TymateSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TymateSwiftExtensions.h; sourceTree = "<group>"; };
 		F464DAE422D39F2C002413BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F464DB1222D730A5002413BD /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		F464DB3222D76917002413BD /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		F464DB3422D769E3002413BD /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,9 @@
 				F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */,
 				F464DAE422D39F2C002413BD /* Info.plist */,
 				F464DB1222D730A5002413BD /* StringExtensions.swift */,
+				F464DB3222D76917002413BD /* DateFormatterExtensions.swift */,
+				F464DB3422D769E3002413BD /* UIImageViewExtensions.swift */,
+				F403402F22D76E4500784A3C /* UIViewController.swift */,
 			);
 			path = TymateSwiftExtensions;
 			sourceTree = "<group>";
@@ -184,6 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F464DB3322D76917002413BD /* DateFormatterExtensions.swift in Sources */,
+				F464DB3522D769E3002413BD /* UIImageViewExtensions.swift in Sources */,
+				F403403022D76E4500784A3C /* UIViewController.swift in Sources */,
 				F464DB1322D730A5002413BD /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+public extension DateFormatter {
+    static var rails: String {
+        return "YYYY-MM-dd'T'HH:mm:ss.SSS'Z'"
+    }
+}
