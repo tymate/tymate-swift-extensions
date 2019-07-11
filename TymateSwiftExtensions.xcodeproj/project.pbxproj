@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B6AA39F467E0BF2D262468F /* Pods_TymateSwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6685F60706721708C67C8CF6 /* Pods_TymateSwiftExtensions.framework */; };
 		F464DAE522D39F2C002413BD /* TymateSwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F464DB1322D730A5002413BD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464DB1222D730A5002413BD /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		F464DAE022D39F2C002413BD /* TymateSwiftExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TymateSwiftExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TymateSwiftExtensions.h; sourceTree = "<group>"; };
 		F464DAE422D39F2C002413BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F464DB1222D730A5002413BD /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,6 @@
 				00955484756FD6B2C4E60979 /* Pods-TymateSwiftExtensions.debug.xcconfig */,
 				78A9AA7B809D409F49089628 /* Pods-TymateSwiftExtensions.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +74,7 @@
 			children = (
 				F464DAE322D39F2C002413BD /* TymateSwiftExtensions.h */,
 				F464DAE422D39F2C002413BD /* Info.plist */,
+				F464DB1222D730A5002413BD /* StringExtensions.swift */,
 			);
 			path = TymateSwiftExtensions;
 			sourceTree = "<group>";
@@ -121,6 +123,7 @@
 				TargetAttributes = {
 					F464DADF22D39F2C002413BD = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F464DB1322D730A5002413BD /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00955484756FD6B2C4E60979 /* Pods-TymateSwiftExtensions.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -329,6 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymate.TymateSwiftExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78A9AA7B809D409F49089628 /* Pods-TymateSwiftExtensions.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
