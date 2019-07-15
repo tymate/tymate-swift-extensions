@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TymateSwiftExtensions"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
@@ -15,6 +15,7 @@ This CocoaPods library helps you perform calculation.
   spec.ios.deployment_target = "12.0"
   spec.swift_version = "4.0"
 
+  spec.framework = "UIKit"
   spec.dependency 'Kingfisher', '~> 5.7.0'
   spec.dependency 'Toast-Swift', '~> 5.0.0'
 
