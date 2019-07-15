@@ -15,6 +15,9 @@ This CocoaPods library helps you perform calculation.
   spec.ios.deployment_target = "12.0"
   spec.swift_version = "4.0"
 
+  spec.dependency 'Kingfisher'
+  spec.dependency 'Toast-Swift'
+
   spec.source        = { :git => "https://github.com/tymate/tymate-swift-extensions.git", :tag => "#{spec.version}" }
   spec.source_files  = "TymateSwiftExtensions/**/*.{h,m,swift}"
 
