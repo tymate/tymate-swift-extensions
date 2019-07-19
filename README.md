@@ -35,7 +35,7 @@ static var rails: String {}
 ## UIImageView Extensions
 
 ```swift
-func loadImage(withUrl url: String?, andPlaceHolder placeHolder: UIImage? = nil,            preloadWithPlaceHolder: Bool = true) {}
+func loadImage(withUrl url: String?, andPlaceHolder placeHolder: UIImage? = nil, preloadWithPlaceHolder: Bool = true) {}
 
 func designRounded(radius: Int) {}
 
