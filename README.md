@@ -25,6 +25,29 @@ func toDouble() -> Double {}
 
 func isEqualToZero() -> Bool {}
 ```
+
+## DateFormatter Extensions
+
+```swift
+static var rails: String {}
+```
+
+## UIImageView Extensions
+
+```swift
+func loadImage(withUrl url: String?, andPlaceHolder placeHolder: UIImage? = nil,            preloadWithPlaceHolder: Bool = true) {}
+
+func designRounded(radius: Int) {}
+
+func designCircle() {}
+```
+
+## UIViewController Extensions
+
+```swift
+func showToast(title: String, subtitle: String? = nil, image: UIImage? = nil, duration: TimeInterval = 3, position: ToastPosition = .bottom, view: UIView? = nil) {}
+```
+
 ## CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
