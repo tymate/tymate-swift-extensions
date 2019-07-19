@@ -1,6 +1,12 @@
 # TymateSwiftExtensions
 
-Just add "https://github.com/tymate/tymate-swift-extensions.git" as source and the pod 'TymateSwiftExtensions' to your Podfile
+[![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS-lightgrey.svg)](https://github.com/tymate/tymate-swift-extensions)
+[![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
+[![Xcode](https://img.shields.io/badge/Xcode-10.2-blue.svg)](https://developer.apple.com/xcode)
+[![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
+This pod have some useful functions and extensions that are often use in swift projects
+For example you can check if a string is a valid email easily or design an imageView in circle
 
 ## String Extensions
 
@@ -62,7 +68,7 @@ To integrate Extensions into your Xcode project using CocoaPods, specify it in y
 
 ```ruby
 source 'https://github.com/tymate/tymate-swift-extensions.git'
-platform :ios, '8.0'
+
 use_frameworks!
 
 pod 'TymateSwiftExtensions'
